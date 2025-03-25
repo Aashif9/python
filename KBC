@@ -1,0 +1,31 @@
+questions=["What is language is mostly use in AP","What is the national bird of India","What is the national animal of India","What is the national fruit of India"]
+points=0
+q1=""
+q2=""
+q3=""
+q4=""
+answers=["Telugu","Peacock","Tiger","Mango"]
+for i in range(4):
+  if(i==0):
+    print(questions[i])
+    q1=str(input("Enter your answer:"))
+  if(i==1):
+    print(questions[i])
+    q2=str(input("Enter your answer:"))
+  if(i==2):
+    print(questions[i])
+    q3=str(input("Enter your answer:"))
+  if(i==3):
+    print(questions[i])
+    q4=str(input("Enter your answer:"))
+
+if(q1==answers[0]):
+  points=1000
+if(q2==answers[1]):
+  points=points+1000
+if(q3==answers[2]):
+  points=points+1000
+if(q4==answers[3]):
+  points=points+1000
+  
+print("Your total score is:",points)   
