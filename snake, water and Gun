@@ -1,0 +1,21 @@
+import random
+
+def check(user,computer):
+    if((user==0 and computer==0) or (user==1 and computer==1) or (user==2 and computer==2) ):
+        return 1
+    elif((user==0 and computer==1) or (user==1 and computer==2) or (user==2 and computer==0)):
+      return 2
+    else:
+      return 3
+      
+print("0 for Snake, 1 for Water, 2 for Gun")
+user=int(input("Enter your choice:"))
+computer=random.randint(0,2)
+print("computer choice is:",computer)
+score=check(user,computer)
+if(score==1):
+    print("Draw")
+elif(score==2):
+    print("You win")
+else:
+    print("You lose")
